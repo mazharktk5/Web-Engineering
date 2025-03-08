@@ -1,91 +1,92 @@
-
-
-
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-    padding: 20px;
-}
-
-h1, h2 {
-    color: #007bff;
-}
-
-
-#main-header {
+h1{
+    color: blue;
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 15px;
-    background: #343a40;
-    color: white;
 }
 
-
-.content {
-    padding: 20px;
-    border: 1px solid #ccc;
-    background: #fff;
-}
-
-.text {
+.intro{
     font-size: 18px;
-    line-height: 1.6;
-    color: #555;
+    color: green;
 }
 
-
-h1, h2, p {
-    margin-bottom: 15px;
+#special{
+    background-color: yellow;
+    padding: 10px;
+    border: 2px solid black;
 }
 
-
-.content p {
-    padding: 5px;
-    border-left: 3px solid #007bff;
+h2 h3{
+    color: darkred;
+    text-decoration: underline;
 }
 
-
-.box > .child {
+p span{
+    color: purple;
     font-weight: bold;
-    color: #e83e8c;
 }
 
-
-.box + .sibling {
-    color: #28a745;
-    font-style: italic;
+ui > li{
+   font-style: italic;
+   color: brown;
 }
 
-
-h2 ~ p {
-    background: #f1f1f1;
-    padding: 5px;
+h1 + p{
+    color: orange;
+    font-size: 20px;
 }
 
-
-a[href] {
-    text-decoration: none;
-    color: #17a2b8;
-}
-
-
-a:hover {
+a.link{
     color: red;
+    text-decoration: none;
 }
 
+a.link:hover{
+    color: blue;
+    text-decoration: underline;
+}
 
-p::first-letter {
-    font-size: 2em;
+a.link:active{
+    color:orange;
+}
+
+a.link:visited{
+    color: darkgreen;
+}
+
+ul li:first-child{
+    color: darkblue;
+}
+
+ul li:last-child{
+    color:palevioletred;
+}
+
+ul li:nth-child(2){
+    color: darkorange;
     font-weight: bold;
-    color: #ff5733;
+}
+
+p::first-letter{
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p::first-line {
+    color: navy;
+}
+
+h2::before {
+    content: "★ ";
+    color: gold;
+}
+
+h2::after {
+    content: " ★";
+    color: gold;
 }

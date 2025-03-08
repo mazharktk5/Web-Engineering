@@ -3,32 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Selectors Demo</title>
+    <title>Css selectors</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Welcome to my page</h1>
+    <p class="intro">
+        Hello, my name is MAzhar. I am a web developer.
+    </p>
 
-    <header id="main-header">Welcome to CSS Selectors Demo</header>
+    <h2>About Us</h2>
+    <p id="special">
+        This is a paragraph about us.
+    </p>
 
-    <section class="content">
-        <h1 class="main-heading">Heading 1 - Main Section</h1>
-        <h2 class="sub-heading">Subheading with Class Selector</h2>
-        <p class="text">This is a paragraph inside a section. It has a class selector.</p>
-        <p>This paragraph is not styled using a class, but it is affected by the element selector.</p>
-        
-        <a href="#" class="link">Click here - Styled Link</a>
-        <a href="#" class="link special-link">Special Link</a>
+    <h3>Our services</h3>
+    <p><span>Highlighted text</span> inside a paragraph using a descendant selector.</p>
 
-        <div class="box">
-            <p class="child">This is inside a div (child selector).</p>
-            <p>This paragraph is also inside the div.</p>
-        </div>
+    <ul>
+        <li>First item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
 
-        <p class="text sibling">This paragraph appears after a div (adjacent sibling selector applies).</p>
-
-    </section>
-
-    <footer>© 2025 CSS Selectors Demo</footer>
-
+    <p>Check out our <a href="#" class="link">services</a> and <a href="#" class="link">contact us</a> for more details.</p>
 </body>
 </html>
